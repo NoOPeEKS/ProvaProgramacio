@@ -1,10 +1,13 @@
 #include <iostream>
-#include "Aleatori.h"
+#include "arrays.h"
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!!!" << endl;
-    cout << "El numero aleatori és: " << Aleatori(76);
-    return 0;
+    cout << "Introdueix 10 nombres per completar l'array: " << endl;
+    int arr[10];
+
+    ReadArray(arr, 10);
+    InvertArray(arr, 10);
+    
 }
